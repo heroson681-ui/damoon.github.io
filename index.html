@@ -3,358 +3,198 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DAMOON | Entertainment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAMOON | Official Website</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-
-body{
- background:#090909;
- color:white;
- font-family:Arial,sans-serif;
-}
-
-header{
- display:flex;
- justify-content:space-between;
- align-items:center;
- padding:20px 6%;
- background:#111;
- flex-wrap:wrap;
- gap:15px;
-}
-
-.logo{font-size:30px;color:#d4af37;font-weight:bold}
-
-nav{display:flex;gap:18px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none}
-nav a:hover{color:#d4af37}
-
-.hero{
- text-align:center;
- padding:100px 20px;
- background:linear-gradient(120deg,#151515,#45320b);
-}
-
-.hero h1{font-size:55px;color:#e5bd45;margin-bottom:15px}
-.hero p{margin-bottom:25px}
-
-.btn{
- background:#d4af37;
- color:black;
- padding:13px 24px;
- border:0;
- border-radius:6px;
- text-decoration:none;
- font-weight:bold;
- display:inline-block;
- cursor:pointer;
-}
-
-.btn:hover{background:#f0ce58}
-
-section{padding:55px 7%}
-h2{color:#d4af37;margin-bottom:25px}
-
-.cards{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
- gap:22px;
-}
-
-.card{
- background:#191919;
- padding:28px;
- border-radius:12px;
- border:1px solid #453b20;
-}
-
-.card h3{margin-bottom:15px}
-.card p{color:#bbb;margin-bottom:20px}
-
-input{
- display:block;
- width:100%;
- padding:14px;
- margin:12px 0;
- border-radius:6px;
- border:1px solid #d4af37;
- background:#111;
- color:white;
- font-size:16px;
-}
-
-input::placeholder{color:#aaa}
-
-button:disabled{opacity:.6;cursor:not-allowed}
-
-.message{margin-top:15px;color:#e5bd45;line-height:1.5}
-
-#dashboard{display:none}
-
-footer{
- text-align:center;
- background:#111;
- padding:30px;
- color:#aaa;
-}
-
-@media(max-width:600px){
- .hero h1{font-size:38px}
- header{justify-content:center}
- nav{justify-content:center}
-}
+body{font-family:Arial,sans-serif;background:#080808;color:white;line-height:1.6}
+header{background:#111;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;border-bottom:1px solid #b8860b}
+.logo{font-size:30px;font-weight:bold;color:gold;letter-spacing:3px}
+nav a{color:white;text-decoration:none;margin:8px;font-weight:bold}
+nav a:hover{color:gold}
+.hero{min-height:480px;background:linear-gradient(#0009,#000b),url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1600') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}
+.hero h1{font-size:55px;color:gold}
+.hero p{font-size:20px;margin:15px}
+.btn{display:inline-block;background:gold;color:black;padding:12px 25px;border:0;border-radius:5px;font-weight:bold;cursor:pointer;text-decoration:none;margin:8px}
+section{padding:55px 7%;text-align:center}
+h2{color:gold;font-size:32px;margin-bottom:25px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card{background:#171717;border:1px solid #333;border-radius:10px;overflow:hidden;padding-bottom:20px}
+.card img{width:100%;height:190px;object-fit:cover}
+.card h3{color:gold;margin:15px}
+.card p{padding:0 15px}
+.about{background:#111}
+.contact{background:#111}
+input{width:100%;padding:13px;margin:8px 0;background:#222;color:white;border:1px solid #555;border-radius:5px}
+.auth{max-width:420px;margin:20px auto;background:#171717;padding:25px;border-radius:10px}
+.auth h3{color:gold;margin:10px}
+footer{background:#050505;text-align:center;padding:25px;color:#aaa;border-top:1px solid #333}
+#message{color:gold;margin:10px}
 </style>
 </head>
 
 <body>
 
 <header>
- <div class="logo">DAMOON</div>
-
- <nav>
-  <a href="#home">Home</a>
-  <a href="#music">Music</a>
-  <a href="#videos">Videos</a>
-  <a href="#dj">DJ</a>
-  <a href="#about">About</a>
-  <a href="#account">Account</a>
- </nav>
-
- <a class="btn" href="#account">Join Us</a>
+<div class="logo">DAMOON</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#music">Music</a>
+<a href="#videos">Videos</a>
+<a href="#dj">DJ</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#account">Account</a>
+</nav>
 </header>
 
 <div class="hero" id="home">
- <h1>DAMOON</h1>
- <p>Your World, Your Music, Your Entertainment.</p>
- <a href="#music" class="btn">Explore Now</a>
+<div>
+<h1>WELCOME TO DAMOON</h1>
+<p>Music • Entertainment • Creativity</p>
+<a href="#music" class="btn">Explore Music</a>
+</div>
 </div>
 
 <section id="music">
- <h2>🎵 Music Zone</h2>
- <div class="cards">
-  <div class="card">
-   <h3>Gospel Music</h3>
-   <p>Discover inspiring gospel songs.</p>
-  </div>
-  <div class="card">
-   <h3>New Music</h3>
-   <p>Discover new artists and songs.</p>
-  </div>
-  <div class="card">
-   <h3>Music Library</h3>
-   <p>Enjoy your favourite music.</p>
-  </div>
- </div>
+<h2>MY MUSIC</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=700" alt="Singer">
+<h3>My Songs</h3>
+<p>Discover my music and songs.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700" alt="Live music">
+<h3>Gospel Music</h3>
+<p>Music that inspires and gives hope.</p>
+</div>
+</div>
 </section>
 
-<section id="videos">
- <h2>🎬 Video Zone</h2>
- <div class="cards">
-  <div class="card"><h3>Music Videos</h3><p>Watch music performances.</p></div>
-  <div class="card"><h3>Entertainment</h3><p>Enjoy exciting videos.</p></div>
-  <div class="card"><h3>Trending</h3><p>Discover popular content.</p></div>
- </div>
+<section id="videos" class="about">
+<h2>MY VIDEOS</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=700" alt="Video camera">
+<h3>Video Gallery</h3>
+<p>Watch music videos and other content.</p>
+</div>
+</div>
+<p style="margin-top:20px">You can add your YouTube video links here.</p>
 </section>
 
 <section id="dj">
- <h2>🎧 DJ DAMOON</h2>
- <div class="card">
-  <h3>Welcome to DJ DAMOON</h3>
-  <p>Music mixing, creativity and entertainment.</p>
- </div>
+<h2>DJ DAMOON</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571266028243-d220c9c3b7c7?w=700" alt="DJ equipment">
+<h3>DJ Entertainment</h3>
+<p>Music mixing and entertainment for events.</p>
+</div>
+</div>
+</section>
+
+<section id="about" class="about">
+<h2>ABOUT DAMOON</h2>
+<p>DAMOON is a platform for music, creativity and entertainment.</p>
+<p>Welcome to my official website. Enjoy the music and stay connected!</p>
+</section>
+
+<section id="contact" class="contact">
+<h2>CONTACT ME</h2>
+<p>For music, events and other information, contact DAMOON.</p>
+<p>Email: Add your email address here</p>
+<p>YouTube: Add your YouTube channel link here</p>
 </section>
 
 <section id="account">
- <h2>Welcome to DAMOON</h2>
+<h2>YOUR ACCOUNT</h2>
+<div class="auth">
+<h3>Create Account</h3>
+<form id="registerForm">
+<input type="email" id="regEmail" placeholder="Your email" required>
+<input type="password" id="regPassword" placeholder="Create password (6+ characters)" required>
+<button class="btn" type="submit">Register</button>
+</form>
 
- <div class="cards" id="authForms">
+<hr style="border-color:#444;margin:20px 0">
 
-  <div class="card">
-   <h3>Create Your Account</h3>
-   <p>Join the DAMOON community today.</p>
+<h3>Login</h3>
+<form id="loginForm">
+<input type="email" id="loginEmail" placeholder="Your email" required>
+<input type="password" id="loginPassword" placeholder="Your password" required>
+<button class="btn" type="submit">Login</button>
+</form>
 
-   <form id="registerForm">
-    <input id="fullname" type="text"
-     placeholder="Full Name" required>
-
-    <input id="regemail" type="email"
-     placeholder="Email Address" required>
-
-    <input id="regpassword" type="password"
-     placeholder="Create Password" minlength="6" required>
-
-    <input id="confirmPassword" type="password"
-     placeholder="Confirm Password" required>
-
-    <button class="btn" id="registerBtn" type="submit">
-     REGISTER
-    </button>
-   </form>
-
-   <p class="message" id="registerMessage"></p>
-  </div>
-
-  <div class="card">
-   <h3>Member Login</h3>
-   <p>Welcome back to DAMOON.</p>
-
-   <form id="loginForm">
-    <input id="loginemail" type="email"
-     placeholder="Email Address" required>
-
-    <input id="loginpassword" type="password"
-     placeholder="Password" required>
-
-    <button class="btn" id="loginBtn" type="submit">
-     LOGIN
-    </button>
-   </form>
-
-   <p class="message" id="loginMessage"></p>
-  </div>
-
- </div>
-
- <div class="card" id="dashboard">
-  <h2>Welcome to your DAMOON Dashboard!</h2>
-  <h3 id="userName"></h3>
-  <p>You are successfully logged in.</p>
-  <p id="userEmail"></p>
-  <button class="btn" id="logoutBtn">LOG OUT</button>
-  <p class="message" id="logoutMessage"></p>
- </div>
-</section>
-
-<section id="about">
- <h2>About DAMOON</h2>
- <p>DAMOON is a platform for music, videos, creativity and entertainment.</p>
-</section>
-
-<section id="contact">
- <h2>Contact Us</h2>
- <p>Connect with DAMOON and become part of our community.</p>
+<p id="message"></p>
+<p id="userStatus">You are not logged in.</p>
+<button class="btn" id="logoutBtn" style="display:none">Logout</button>
+</div>
 </section>
 
 <footer>
- <p>© 2026 DAMOON. All Rights Reserved.</p>
- <p>Music | Videos | Entertainment</p>
+<p>© 2026 DAMOON. All Rights Reserved.</p>
+<p>Music • Entertainment • Creativity</p>
 </footer>
 
-<!-- Firebase libraries -->
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 
 <script>
-
-// STEP 1: ADD YOUR FIREBASE CONFIGURATION HERE
-
-
 const firebaseConfig = {
-  apiKey: "AIzaSyBwBzVKkC_qNILoHkpqWB7J_lS0xpCBvi0",
+  apiKey: "AIzaSyBwBzVKcC_qNILoHkpqWB7J_lS0xpCBvi0",
   authDomain: "damoon-3647d.firebaseapp.com",
   projectId: "damoon-3647d",
-  appId: "1:527109365584:web:b7d986c2e940356ccf5655"
+  storageBucket: "damoon-3647d.firebasestorage.app",
+  messagingSenderId: "527109365584",
+  appId: "1:527109365584:web:b7d986c2e940356ccf5655",
+  measurementId: "G-CWY6TVP2L1"
 };
+
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
-};
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
+const message = document.getElementById("message");
 
-// Display messages
-function showMessage(id,message){
- document.getElementById(id).textContent=message;
-}
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const email = document.getElementById("regEmail").value;
+  const password = document.getElementById("regPassword").value;
 
-// STEP 2: REGISTER USER
-document.getElementById("registerForm").addEventListener("submit",async function(e){
- e.preventDefault();
-
- const name=document.getElementById("fullname").value.trim();
- const email=document.getElementById("regemail").value.trim();
- const password=document.getElementById("regpassword").value;
- const confirm=document.getElementById("confirmPassword").value;
- const btn=document.getElementById("registerBtn");
-
- if(password!==confirm){
-  showMessage("registerMessage","Passwords do not match!");
-  return;
- }
-
- if(password.length<6){
-  showMessage("registerMessage","Password must have at least 6 characters.");
-  return;
- }
-
- btn.disabled=true;
- showMessage("registerMessage","Creating your account...");
-
- try{
-  const result=await auth.createUserWithEmailAndPassword(email,password);
-  await result.user.updateProfile({displayName:name});
-  showMessage("registerMessage","Account created successfully!");
-  document.getElementById("registerForm").reset();
- }catch(error){
-  showMessage("registerMessage",error.message);
- }finally{
-  btn.disabled=false;
- }
+  auth.createUserWithEmailAndPassword(email, password)
+    .then(() => message.textContent = "Account created successfully!")
+    .catch(error => message.textContent = error.message);
 });
 
-// STEP 3: LOGIN USER
-document.getElementById("loginForm").addEventListener("submit",async function(e){
- e.preventDefault();
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const email = document.getElementById("loginEmail").value;
+  const password = document.getElementById("loginPassword").value;
 
- const email=document.getElementById("loginemail").value.trim();
- const password=document.getElementById("loginpassword").value;
- const btn=document.getElementById("loginBtn");
-
- btn.disabled=true;
- showMessage("loginMessage","Logging in...");
-
- try{
-  await auth.signInWithEmailAndPassword(email,password);
-  showMessage("loginMessage","Login successful!");
- }catch(error){
-  showMessage("loginMessage",error.message);
- }finally{
-  btn.disabled=false;
- }
+  auth.signInWithEmailAndPassword(email, password)
+    .then(() => message.textContent = "Login successful!")
+    .catch(error => message.textContent = error.message);
 });
 
-// STEP 4: CHECK LOGIN STATUS
-auth.onAuthStateChanged(function(user){
- const forms=document.getElementById("authForms");
- const dashboard=document.getElementById("dashboard");
-
- if(user){
-  forms.style.display="none";
-  dashboard.style.display="block";
-
-  document.getElementById("userName").textContent=
-   "Hello, "+(user.displayName || "DAMOON Member");
-
-  document.getElementById("userEmail").textContent=user.email;
- }else{
-  forms.style.display="grid";
-  dashboard.style.display="none";
- }
+document.getElementById("logoutBtn").addEventListener("click", function() {
+  auth.signOut();
+  message.textContent = "You have logged out.";
 });
 
-// STEP 5: LOGOUT
-document.getElementById("logoutBtn").addEventListener("click",async function(){
- try{
-  await auth.signOut();
-  showMessage("logoutMessage","You have logged out.");
- }catch(error){
-  showMessage("logoutMessage",error.message);
- }
-});
+auth.onAuthStateChanged(function(user) {
+  const status = document.getElementById("userStatus");
+  const logout = document.getElementById("logoutBtn");
 
+  if (user) {
+    status.textContent = "Logged in as: " + user.email;
+    logout.style.display = "inline-block";
+  } else {
+    status.textContent = "You are not logged in.";
+    logout.style.display = "none";
+  }
+});
 </script>
 
 </body>
